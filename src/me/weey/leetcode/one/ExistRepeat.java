@@ -1,4 +1,4 @@
-package 探索.初级算法;
+package me.weey.leetcode.one;
 
 import java.util.HashSet;
 import java.util.Set;

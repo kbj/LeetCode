@@ -1,4 +1,4 @@
-package 探索.初级算法;
+package me.weey.leetcode.one;
 
 /**
  * 将包含 n 个元素的数组向右旋转 k 步。
