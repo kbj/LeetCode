@@ -1,4 +1,4 @@
-package me.weey.leetcode.one;
+package me.weey.leetcode;
 
 /**
  * 将包含 n 个元素的数组向右旋转 k 步。

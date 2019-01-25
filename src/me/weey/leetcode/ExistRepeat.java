@@ -1,4 +1,4 @@
-package me.weey.leetcode.one;
+package me.weey.leetcode;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package me.weey.leetcode.one;
+package me.weey.leetcode;
 
 /**
  * 给定一个有序数组，你需要原地删除其中的重复内容，使每个元素只出现一次,并返回新的长度。
