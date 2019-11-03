@@ -1,4 +1,4 @@
-package me.weey.leetcode;
+package me.weey.leetcode.array;
 
 /**
  * 示例 1:

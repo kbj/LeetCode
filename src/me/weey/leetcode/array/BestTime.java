@@ -1,4 +1,4 @@
-package me.weey.leetcode;
+package me.weey.leetcode.array;
 
 /**
  * 假设有一个数组，它的第 i 个元素是一个给定的股票在第 i 天的价格。

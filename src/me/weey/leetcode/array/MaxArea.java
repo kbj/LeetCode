@@ -1,4 +1,4 @@
-package me.weey.leetcode;
+package me.weey.leetcode.array;
 
 public class MaxArea {
     public static void main(String[] args) {
