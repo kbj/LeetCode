@@ -4,7 +4,7 @@ package me.weey.leetcode.string;
  * @author Weey
  * @program: Leetcode
  * @package me.weey.leetcode.string
- * @description:
+ * @description: 循环解法
  * 报数序列是一个整数序列，按照其中的整数的顺序进行报数，得到下一个数。其前五项如下：
  *
  * 1.     1
