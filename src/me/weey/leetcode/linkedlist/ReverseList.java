@@ -46,14 +46,4 @@ public class ReverseList {
 
         return theFirst;
     }
-
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 }
