@@ -58,6 +58,7 @@ public class IsValidBST {
             return true;
         }
 
+        //构建出每个节点的最大值和最小值，如果不满足那就不是二叉搜索树
         if (root.val <= min || root.val >= max) {
             return false;
         }
