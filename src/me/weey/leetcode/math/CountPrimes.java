@@ -55,4 +55,28 @@ public class CountPrimes {
         }
         return count;
     }
+
+    public static int countPrimes2(int n) {
+        if (n < 3) {
+            return 0;
+        }
+        // 当n > 2
+        // 构建一个数组存放每次运算后得到的结果数量，index = 数字 - 1  value = 0为非质数，1为质数
+        int[] nums = new int[n - 1];
+        int count = 0;
+        for (int i = 2; i < n; i++) {
+            if (nums[i - 1] == 0) {
+                count++;
+                // 质数的n倍都不是质数
+                if (i * i < n) {
+                    int time = 2;
+                    while (i * time < n) {
+                        nums[i * time - 1] = 1;
+                        time++;
+                    }
+                }
+            }
+        }
+        return count;
+    }
 }
