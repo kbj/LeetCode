@@ -16,22 +16,14 @@ public class SearchMatrix {
         int one = matrix.length - 1;
         int two = 0;
 
-        while (one >= 0 && two <= matrix[one].length) {
+        while (one >= 0 && two < matrix[one].length) {
             // 先判断当前行
             if (matrix[one][two] == target) {
                 return true;
-            }
-            if (matrix[one][two] > target) {
+            } else if (matrix[one][two] > target) {
                 one--;
-                two = 0;
-                continue;
-            }
-            if (matrix[one][two] < target) {
+            } else if (matrix[one][two] < target) {
                 two++;
-            }
-            if (two > matrix[one].length - 1) {
-                one--;
-                two = 0;
             }
         }
         return false;
