@@ -1,4 +1,4 @@
-package me.weey.leetcode.string;
+package me.weey.leetcode.tree;
 
 /**
  * 实现 Trie (前缀树)
