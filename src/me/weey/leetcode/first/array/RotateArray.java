@@ -8,7 +8,7 @@ package me.weey.leetcode.first.array;
  * [显示提示]
  * 提示:
  * 要求空间复杂度为 O(1)
- * Created by WeiKai on 2018/03/12.
+ * Created by kbj on 2018/03/12.
  */
 public class RotateArray {
     public static void main(String[] args) {
