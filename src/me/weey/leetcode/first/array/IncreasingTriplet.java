@@ -1,4 +1,4 @@
-package me.weey.leetcode.second.array;
+package me.weey.leetcode.first.array;
 
 /**
  * 给你一个整数数组nums ，判断这个数组中是否存在长度为 3 的递增子序列。
