@@ -25,10 +25,10 @@ package me.weey.leetcode.second.array;
  * @author pc
  */
 public class SearchMatrix {
-    public static boolean searchMatrix(int[][] matrix, int target) {
+    public static boolean searchMatrix1(int[][] matrix, int target) {
         int one = 0, two = 0;
         while (one < matrix.length && two > -1) {
-            // 先往左搜索
+            // 先往右搜索
             int num = matrix[one][two];
             if (num == target) {
                 return true;
@@ -43,16 +43,40 @@ public class SearchMatrix {
         return false;
     }
 
+    public static boolean searchMatrix(int[][] matrix, int target) {
+        int one = 0, two = 0;
+        boolean[][] way = new boolean[matrix.length][matrix[one].length];
+
+        while (one < matrix.length && one > -1 && two > -1 && two < matrix[one].length) {
+            way[one][two] = true;
+            // 往下搜索
+            if (matrix[one][two] == target) {
+                return true;
+            } else if (matrix[one][two] < target) {
+                one++;
+                if (one >= matrix.length) {
+                    one--;
+                    two++;
+                }
+            } else if (matrix[one][two] > target) {
+                one--;
+                if (one > -1 && way[one][two]) {
+                    two++;
+                }
+            }
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         int[][] nums = new int[][]{
-                {3, 3, 8, 13, 13, 18},
-                {4, 5, 11,13, 18, 20},
-                {9, 9, 14,15, 23, 23},
-                {13,18,22,22,25,27},
-                {18,22,23,28,30,33},
-                {21,25,28,30,35,35},
-                {24,25,33,36,37,40}
+//                {1,4,7,11,15},
+//                {2,5,8,12,19},
+//                {3,6,9,16,22},
+//                {10,13,14,17,24},
+//                {18,21,23,26,30},
+                {-1, 3}
         };
-        System.out.println(searchMatrix(nums, 21));
+        System.out.println(searchMatrix(nums, 3));
     }
 }
