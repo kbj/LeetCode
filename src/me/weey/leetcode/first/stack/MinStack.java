@@ -1,4 +1,4 @@
-package me.weey.leetcode.first.design;
+package me.weey.leetcode.first.stack;
 
 import java.util.Stack;
 
