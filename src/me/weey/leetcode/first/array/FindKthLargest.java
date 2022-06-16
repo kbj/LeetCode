@@ -78,11 +78,11 @@ public class FindKthLargest {
         int r = end;
         int m = start;
         while (m<=r){
-            if(nums[m] < standard){
+            if(nums[m] > standard){
                 swap(nums, m, l);
                 l++;
                 m++;
-            }else if(nums[m] > standard){
+            }else if(nums[m] < standard){
                 swap(nums, m, r);
                 r--;
             }else {
